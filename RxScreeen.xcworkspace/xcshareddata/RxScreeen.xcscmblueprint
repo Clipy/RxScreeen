@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "83F4245EBCA913F13D03E5A4609E18A118E23EED" : 0,
+    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73033EDB-ACA7-4C77-8211-EB94D8F8D693",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "83F4245EBCA913F13D03E5A4609E18A118E23EED" : "RxScreeen\/Carthage\/Checkouts\/Screeen\/",
+    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : "RxScreeen\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RxScreeen",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RxScreeen.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Clipy\/RxScreeen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Clipy\/Screeen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "83F4245EBCA913F13D03E5A4609E18A118E23EED"
+    }
+  ]
+}

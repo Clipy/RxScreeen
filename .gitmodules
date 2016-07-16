@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Screeen"]
+	path = Carthage/Checkouts/Screeen
+	url = https://github.com/Clipy/Screeen.git
