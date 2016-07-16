@@ -5,12 +5,14 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "83F4245EBCA913F13D03E5A4609E18A118E23EED" : 0,
-    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : 0
+    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : 0,
+    "8B123162C394A0A0A138779108E4C59DD771865A" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73033EDB-ACA7-4C77-8211-EB94D8F8D693",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "83F4245EBCA913F13D03E5A4609E18A118E23EED" : "RxScreeen\/Carthage\/Checkouts\/Screeen\/",
-    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : "RxScreeen\/"
+    "28E43770EF89D1A393E6CF3B3428E0E3FFA0B7AE" : "RxScreeen\/",
+    "8B123162C394A0A0A138779108E4C59DD771865A" : "RxScreeen\/Carthage\/Checkouts\/RxSwift\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "RxScreeen",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Clipy\/Screeen.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "83F4245EBCA913F13D03E5A4609E18A118E23EED"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ReactiveX\/RxSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B123162C394A0A0A138779108E4C59DD771865A"
     }
   ]
 }

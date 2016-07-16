@@ -1,3 +1,6 @@
 [submodule "Carthage/Checkouts/Screeen"]
 	path = Carthage/Checkouts/Screeen
 	url = https://github.com/Clipy/Screeen.git
+[submodule "Carthage/Checkouts/RxSwift"]
+	path = Carthage/Checkouts/RxSwift
+	url = https://github.com/ReactiveX/RxSwift.git

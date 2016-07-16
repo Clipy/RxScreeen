@@ -7,21 +7,36 @@
 //
 
 import Cocoa
+import Screeen
+import RxScreeen
+import RxSwift
+import RxCocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
+    let screeen = ScreenShotObserver()
+    let rx_disposeBag = DisposeBag()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+
+        screeen.rx_addedImage
+            .subscribeNext { image in
+                Swift.print("Added image")
+            }.addDisposableTo(rx_disposeBag)
+
+        screeen.rx_updatedImage
+            .observeOn(MainScheduler.instance)
+            .subscribeNext { image in
+                Swift.print("Updated image")
+            }.addDisposableTo(rx_disposeBag)
+
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
 
 }
 
