@@ -10,4 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Lib/RxScreeen/*.swift'
   s.frameworks   = 'Cocoa'
   s.dependency 'Screeen', '0.0.3'
+  s.dependency 'RxSwift', '~> 2.5'
+  s.dependency 'RxCocoa', '~> 2.5'
 end
