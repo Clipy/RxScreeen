@@ -1,6 +1,8 @@
 # RxScreeen
 [![Release version](https://img.shields.io/github/release/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/releases/latest)
 [![License: MIT](https://img.shields.io/github/license/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/blob/master/LICENSE)
+[![Version](https://img.shields.io/cocoapods/v/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
+[![Platform](https://img.shields.io/cocoapods/p/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
 
 RxScreeen is a RxSwift wrapper for Screeen.
 
@@ -10,6 +12,35 @@ platform :osx, '10.9'
 use_frameworks!
 
 pod 'RxScreeen'
+```
+
+## Example
+```
+let observer = ScreenShotObserver()
+observer.rx_image
+  .subscribeNext { image in
+    // Add / Update / Remove events images
+  }
+  
+observer.rx_item
+  .subscribeNext { item in 
+    // Add / Update / Remove events NSMetadataItem
+  }
+  
+observer.rx_addedImage
+  .subscribeNext { image in
+    // Add events image
+  }
+  
+observer.rx_updatedImage
+  .subscribeNext { image in
+    // Update events image
+  }
+
+observer.rx_removedImage
+  .subscribeNext { image in
+    // Remove events image
+  }
 ```
 
 ## Dependencies
