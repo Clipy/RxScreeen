@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :osx, '10.9'
   s.source_files = 'Lib/RxScreeen/*.swift'
   s.frameworks   = 'Cocoa'
-  s.dependency 'Screeen', '1.0.0'
+  s.dependency 'Screeen', '~> 1.0'
   s.dependency 'RxSwift', '3.0.0-beta.1'
   s.dependency 'RxCocoa', '3.0.0-beta.1'
 end
