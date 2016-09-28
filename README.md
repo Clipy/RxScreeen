@@ -6,6 +6,11 @@
 
 RxScreeen is a RxSwift wrapper for Screeen.
 
+## Requirements
+- macOS 10.9+
+- Xcode 8.0+
+- Swift 3.0+
+
 ## Usage
 ```
 platform :osx, '10.9'
@@ -18,29 +23,29 @@ pod 'RxScreeen'
 ```
 let observer = ScreenShotObserver()
 observer.rx_image
-  .subscribeNext { image in
+  .subscribe(onNext: { image in
     // Add / Update / Remove events images
-  }
-  
+  })
+
 observer.rx_item
-  .subscribeNext { item in 
+  .subscribe(onNext: { item in
     // Add / Update / Remove events NSMetadataItem
-  }
-  
+  })
+
 observer.rx_addedImage
-  .subscribeNext { image in
+  .subscribe(onNext: { image in
     // Add events image
-  }
-  
+  })
+
 observer.rx_updatedImage
-  .subscribeNext { image in
+  .subscribe(onNext: { image in
     // Update events image
-  }
+  })
 
 observer.rx_removedImage
-  .subscribeNext { image in
+  .subscribe(onNext: { image in
     // Remove events image
-  }
+  })
 ```
 
 ## Dependencies
