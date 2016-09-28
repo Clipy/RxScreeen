@@ -32,7 +32,7 @@ public extension ScreenShotObserver {
                 .merge()
                 .flatMap { a -> Observable<NSImage> in
                     guard let metadataItem = a[1] as? NSMetadataItem else { return Observable.empty() }
-                    guard let imagePath = metadataItem.valueForAttribute("kMDItemPath") as? String else { return Observable.empty() }
+                    guard let imagePath = metadataItem.value(forAttribute: "kMDItemPath") as? String else { return Observable.empty() }
                     guard let image = NSImage(contentsOfFile: imagePath) else { return Observable.empty() }
 
                     return Observable.just(image)
@@ -65,7 +65,7 @@ public extension ScreenShotObserver {
         return rx_delegate.observe(#selector(ScreenShotObserverDelegate.screenShotObserver(_:addedItem:)))
                 .flatMap { a -> Observable<NSImage> in
                     guard let metadataItem = a[1] as? NSMetadataItem else { return Observable.empty() }
-                    guard let imagePath = metadataItem.valueForAttribute("kMDItemPath") as? String else { return Observable.empty() }
+                    guard let imagePath = metadataItem.value(forAttribute: "kMDItemPath") as? String else { return Observable.empty() }
                     guard let image = NSImage(contentsOfFile: imagePath) else { return Observable.empty() }
 
                     return Observable.just(image)
@@ -84,7 +84,7 @@ public extension ScreenShotObserver {
         return rx_delegate.observe(#selector(ScreenShotObserverDelegate.screenShotObserver(_:updatedItem:)))
                 .flatMap { a -> Observable<NSImage> in
                     guard let metadataItem = a[1] as? NSMetadataItem else { return Observable.empty() }
-                    guard let imagePath = metadataItem.valueForAttribute("kMDItemPath") as? String else { return Observable.empty() }
+                    guard let imagePath = metadataItem.value(forAttribute: "kMDItemPath") as? String else { return Observable.empty() }
                     guard let image = NSImage(contentsOfFile: imagePath) else { return Observable.empty() }
 
                     return Observable.just(image)
@@ -103,7 +103,7 @@ public extension ScreenShotObserver {
         return rx_delegate.observe(#selector(ScreenShotObserverDelegate.screenShotObserver(_:removedItem:)))
             .flatMap { a -> Observable<NSImage> in
                 guard let metadataItem = a[1] as? NSMetadataItem else { return Observable.empty() }
-                guard let imagePath = metadataItem.valueForAttribute("kMDItemPath") as? String else { return Observable.empty() }
+                guard let imagePath = metadataItem.value(forAttribute: "kMDItemPath") as? String else { return Observable.empty() }
                 guard let image = NSImage(contentsOfFile: imagePath) else { return Observable.empty() }
 
                 return Observable.just(image)

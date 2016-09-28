@@ -1,2 +1,2 @@
-github "Clipy/Screeen"
-github "ReactiveX/RxSwift"
+github "Clipy/Screeen" "swift3"
+github "ReactiveX/RxSwift" "3.0.0-beta.1"

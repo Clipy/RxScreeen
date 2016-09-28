@@ -19,22 +19,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let screeen = ScreenShotObserver()
     let rx_disposeBag = DisposeBag()
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
 
         screeen.rx_addedImage
-            .subscribeNext { image in
+            .subscribe(onNext: { image in
                 Swift.print("Added image")
-            }.addDisposableTo(rx_disposeBag)
+            }).addDisposableTo(rx_disposeBag)
 
         screeen.rx_updatedImage
             .observeOn(MainScheduler.instance)
-            .subscribeNext { image in
+            .subscribe(onNext: { image in
                 Swift.print("Updated image")
-            }.addDisposableTo(rx_disposeBag)
+            }).addDisposableTo(rx_disposeBag)
 
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
