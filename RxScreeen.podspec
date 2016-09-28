@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxScreeen"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = "RxScreeen is a RxSwift wrapper for Screeen."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/Clipy/RxScreeen"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :osx, '10.9'
   s.source_files = 'Lib/RxScreeen/*.swift'
   s.frameworks   = 'Cocoa'
-  s.dependency 'Screeen', '0.0.3'
-  s.dependency 'RxSwift', '~> 2.5'
-  s.dependency 'RxCocoa', '~> 2.5'
+  s.dependency 'Screeen', '1.0.0'
+  s.dependency 'RxSwift', '3.0.0-beta.1'
+  s.dependency 'RxCocoa', '3.0.0-beta.1'
 end
