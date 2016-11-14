@@ -21,12 +21,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-        screeen.rx_addedImage
+        screeen.rx.addedImage
             .subscribe(onNext: { image in
                 Swift.print("Added image")
             }).addDisposableTo(rx_disposeBag)
 
-        screeen.rx_updatedImage
+        screeen.rx.updatedImage
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { image in
                 Swift.print("Updated image")

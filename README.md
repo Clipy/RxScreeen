@@ -31,27 +31,27 @@ github "ReactiveX/RxSwift"
 ## Example
 ```
 let observer = ScreenShotObserver()
-observer.rx_image
+observer.rx.image
   .subscribe(onNext: { image in
     // Add / Update / Remove events images
   })
 
-observer.rx_item
+observer.rx.item
   .subscribe(onNext: { item in
     // Add / Update / Remove events NSMetadataItem
   })
 
-observer.rx_addedImage
+observer.rx.addedImage
   .subscribe(onNext: { image in
     // Add events image
   })
 
-observer.rx_updatedImage
+observer.rx.updatedImage
   .subscribe(onNext: { image in
     // Update events image
   })
 
-observer.rx_removedImage
+observer.rx.removedImage
   .subscribe(onNext: { image in
     // Remove events image
   })
