@@ -12,6 +12,10 @@ import RxSwift
 import RxCocoa
 
 final class RxScreeenDelegateProxy: DelegateProxy, ScreenShotObserverDelegate, DelegateProxyType {
+    static var factory: DelegateProxyFactory = DelegateProxyFactory { (parentObject: ScreenShotObserver) in
+        RxScreeenDelegateProxy(parentObject: parentObject)
+    }
+
     static func currentDelegateFor(_ object: AnyObject) -> AnyObject? {
         let screeen: ScreenShotObserver = (object as? ScreenShotObserver)!
         return screeen.delegate
