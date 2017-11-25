@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C5392C341F6CED1D00F9A41D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6166F51D3A19070049FA14 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
+			remoteInfo = Benchmarks;
+		};
 		FA6166A81D3A085A0049FA14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FA6166931D3A085A0049FA14 /* Project object */;
@@ -280,14 +287,15 @@
 				FA61671F1D3A19070049FA14 /* RxBlocking.framework */,
 				FA6167211D3A19070049FA14 /* RxBlocking.framework */,
 				FA6167231D3A19070049FA14 /* RxBlocking.framework */,
-				FA6167251D3A19070049FA14 /* RxTests.framework */,
-				FA6167271D3A19070049FA14 /* RxTests.framework */,
-				FA6167291D3A19070049FA14 /* RxTests.framework */,
-				FA61672B1D3A19070049FA14 /* RxTests.framework */,
+				FA6167251D3A19070049FA14 /* RxTest.framework */,
+				FA6167271D3A19070049FA14 /* RxTest.framework */,
+				FA6167291D3A19070049FA14 /* RxTest.framework */,
+				FA61672B1D3A19070049FA14 /* RxTest.framework */,
 				FA61672D1D3A19070049FA14 /* AllTests-iOS.xctest */,
 				FA61672F1D3A19070049FA14 /* AllTests-tvOS.xctest */,
-				FA6167311D3A19070049FA14 /* AllTests-OSX.xctest */,
+				FA6167311D3A19070049FA14 /* AllTests-macOS.xctest */,
 				FA6167331D3A19070049FA14 /* PerformanceTests.app */,
+				C5392C351F6CED1D00F9A41D /* Benchmarks.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,15 +357,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Shunsuke Furubayashi";
 				TargetAttributes = {
 					FA61669B1D3A085A0049FA14 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					FA6166A51D3A085A0049FA14 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -390,6 +399,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C5392C351F6CED1D00F9A41D /* Benchmarks.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Benchmarks.xctest;
+			remoteRef = C5392C341F6CED1D00F9A41D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FA6166DE1D3A0C090049FA14 /* Screeen.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -488,31 +504,31 @@
 			remoteRef = FA6167221D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA6167251D3A19070049FA14 /* RxTests.framework */ = {
+		FA6167251D3A19070049FA14 /* RxTest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = RxTests.framework;
+			path = RxTest.framework;
 			remoteRef = FA6167241D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA6167271D3A19070049FA14 /* RxTests.framework */ = {
+		FA6167271D3A19070049FA14 /* RxTest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = RxTests.framework;
+			path = RxTest.framework;
 			remoteRef = FA6167261D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA6167291D3A19070049FA14 /* RxTests.framework */ = {
+		FA6167291D3A19070049FA14 /* RxTest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = RxTests.framework;
+			path = RxTest.framework;
 			remoteRef = FA6167281D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA61672B1D3A19070049FA14 /* RxTests.framework */ = {
+		FA61672B1D3A19070049FA14 /* RxTest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = RxTests.framework;
+			path = RxTest.framework;
 			remoteRef = FA61672A1D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -530,17 +546,18 @@
 			remoteRef = FA61672E1D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FA6167311D3A19070049FA14 /* AllTests-OSX.xctest */ = {
+		FA6167311D3A19070049FA14 /* AllTests-macOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "AllTests-OSX.xctest";
+			path = "AllTests-macOS.xctest";
 			remoteRef = FA6167301D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		FA6167331D3A19070049FA14 /* PerformanceTests.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = PerformanceTests.app;
+			name = PerformanceTests.app;
+			path = Microoptimizations.app;
 			remoteRef = FA6167321D3A19070049FA14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -601,14 +618,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -651,14 +674,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -703,7 +732,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -724,7 +754,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clipy-app.RxScreeen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -736,6 +767,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clipy-app.RxScreeenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -747,6 +780,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clipy-app.RxScreeenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

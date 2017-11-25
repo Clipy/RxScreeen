@@ -17,21 +17,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     let screeen = ScreenShotObserver()
-    let rx_disposeBag = DisposeBag()
+    let disposeBag = DisposeBag()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-
         screeen.rx.addedImage
             .subscribe(onNext: { image in
                 Swift.print("Added image")
-            }).addDisposableTo(rx_disposeBag)
-
+            })
+            .disposed(by: disposeBag)
         screeen.rx.updatedImage
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { image in
                 Swift.print("Updated image")
-            }).addDisposableTo(rx_disposeBag)
-
+            })
+            .disposed(by: disposeBag)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
