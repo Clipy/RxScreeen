@@ -15,9 +15,6 @@ RxScreeen is a RxSwift wrapper for Screeen.
 ## Usage
 ### CocoaPods
 ```
-platform :osx, '10.10'
-use_frameworks!
-
 pod 'RxScreeen'
 ```
 
@@ -29,7 +26,7 @@ github "ReactiveX/RxSwift"
 ```
 
 ## Example
-```
+```swift
 let observer = ScreenShotObserver()
 observer.rx.image
   .subscribe(onNext: { image in
