@@ -55,7 +55,6 @@ observer.rx.removedImage
 ```
 
 ## Dependencies
-The source code is dependent on hotkey library.
 - [Screeen](https://github.com/Clipy/Screeen)
 
 ## How to Build
