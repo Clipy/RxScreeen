@@ -362,7 +362,7 @@
 				TargetAttributes = {
 					FA61669B1D3A085A0049FA14 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					FA6166A51D3A085A0049FA14 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -736,8 +736,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -758,8 +757,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clipy-app.RxScreeen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
