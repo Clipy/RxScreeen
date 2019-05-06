@@ -7,11 +7,6 @@
 
 RxScreeen is a RxSwift wrapper for Screeen.
 
-## Requirements
-- macOS 10.10+
-- Xcode 9.4+
-- Swift 4.1+
-
 ## Usage
 ### CocoaPods
 ```
