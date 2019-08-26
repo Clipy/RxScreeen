@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Clipy/RxScreeen.git", :tag => "v#{s.version}" }
   s.platform     = :osx, '10.10'
   s.source_files = 'Lib/RxScreeen/*.swift'
+  s.swift_version = '5.0'
   s.frameworks   = 'Cocoa'
   s.dependency 'Screeen', '~> 1.3'
   s.dependency 'RxSwift', '~> 5.0'
