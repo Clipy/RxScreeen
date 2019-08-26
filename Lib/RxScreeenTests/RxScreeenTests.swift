@@ -1,9 +1,11 @@
 //
 //  RxScreeenTests.swift
-//  RxScreeenTests
 //
-//  Created by 古林俊佑 on 2016/07/16.
-//  Copyright © 2016年 Shunsuke Furubayashi. All rights reserved.
+//  RxScreeenTests
+//  GitHub: https://github.com/clipy
+//  HP: https://clipy-app.com
+//
+//  Copyright © 2015-2019 Clipy Project.
 //
 
 import XCTest
