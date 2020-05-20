@@ -1,4 +1,5 @@
 # RxScreeen
+![CI](https://github.com/Clipy/RxScreeen/workflows/CI/badge.svg)
 [![Release version](https://img.shields.io/github/release/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/releases/latest)
 [![License: MIT](https://img.shields.io/github/license/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/blob/master/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -15,7 +16,7 @@ pod 'RxScreeen'
 
 ### Carthage
 ```
-github "Clipy/RxSceeen"
+github "Clipy/RxScreeen"
 github "Clipy/Screeen"
 github "ReactiveX/RxSwift"
 ```
@@ -55,13 +56,6 @@ observer.rx.removedImage
 ## How to Build
 1. Move to the project root directory
 2. Install dependency library with `carthage` or `git submodule`
-3. `carthage checkout --use-submodules` or `git submodule init && git submodule update`
+3. `carthage checkout --use-submodules` or `git submodule update --init --recursive`
 4. Open `RxScreeen.xcworkspace` on Xcode.
 5. build.
-
-### Contributing
-1. Fork it ( https://github.com/Clipy/RxScreeen/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request

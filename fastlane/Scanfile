@@ -1,4 +1,0 @@
-workspace("RxScreeen.xcworkspace")
-scheme("RxScreeen")
-clean(true)
-skip_build(true)
