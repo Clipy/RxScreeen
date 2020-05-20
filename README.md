@@ -5,6 +5,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
 [![Platform](https://img.shields.io/cocoapods/p/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
+[![SPM supported](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager)
 
 RxScreeen is a RxSwift wrapper for Screeen.
 
