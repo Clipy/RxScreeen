@@ -49,6 +49,7 @@ observer.rx.removedImage
   .subscribe(onNext: { image in
     // Remove events image
   })
+observer.start()
 ```
 
 ## Dependencies

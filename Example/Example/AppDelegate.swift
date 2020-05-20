@@ -33,6 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 Swift.print("Updated image")
             })
             .disposed(by: disposeBag)
+        screeen.start()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
