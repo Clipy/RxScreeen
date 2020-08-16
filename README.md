@@ -1,5 +1,5 @@
 # RxScreeen
-![CI](https://github.com/Clipy/RxScreeen/workflows/CI/badge.svg)
+![CI](https://github.com/Clipy/RxScreeen/workflows/Xcode-Build/badge.svg)
 [![Release version](https://img.shields.io/github/release/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/releases/latest)
 [![License: MIT](https://img.shields.io/github/license/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/blob/master/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
