@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxScreeen"
-  s.version      = "2.0.0"
+  s.version      = "2.1.0"
   s.summary      = "RxScreeen is a RxSwift wrapper for Screeen."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/Clipy/RxScreeen"
