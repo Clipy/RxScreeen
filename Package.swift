@@ -13,7 +13,7 @@ let package = Package(
             targets: ["RxScreeen"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Clipy/Screeen", from: "2.0.1"),
+        .package(url: "https://github.com/Clipy/Screeen", from: "2.1.0"),
         .package(url: "https://github.com/ReactiveX/RxSwift", from: "6.0.0"),
     ],
     targets: [
