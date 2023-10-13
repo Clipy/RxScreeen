@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "RxScreeen",
     platforms: [
-      .macOS(.v10_10)
+      .macOS(.v10_13)
     ],
     products: [
         .library(
@@ -13,7 +13,7 @@ let package = Package(
             targets: ["RxScreeen"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Clipy/Screeen", from: "2.0.1"),
+        .package(url: "https://github.com/Clipy/Screeen", from: "2.1.0"),
         .package(url: "https://github.com/ReactiveX/RxSwift", from: "6.0.0"),
     ],
     targets: [
