@@ -2,25 +2,8 @@
 ![CI](https://github.com/Clipy/RxScreeen/workflows/Xcode-Build/badge.svg)
 [![Release version](https://img.shields.io/github/release/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/releases/latest)
 [![License: MIT](https://img.shields.io/github/license/Clipy/RxScreeen.svg)](https://github.com/Clipy/RxScreeen/blob/master/LICENSE)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Version](https://img.shields.io/cocoapods/v/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
-[![Platform](https://img.shields.io/cocoapods/p/RxScreeen.svg)](http://cocoadocs.org/docsets/RxScreeen)
-[![SPM supported](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager)
 
 RxScreeen is a RxSwift wrapper for Screeen.
-
-## Usage
-### CocoaPods
-```
-pod 'RxScreeen'
-```
-
-### Carthage
-```
-github "Clipy/RxScreeen"
-github "Clipy/Screeen"
-github "ReactiveX/RxSwift"
-```
 
 ## Example
 ```swift
